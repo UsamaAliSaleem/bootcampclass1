@@ -24,11 +24,10 @@ jobs:
     - name: Installing Node
       uses: actions/setup-node@v2-beta
       with:
-        node-version:12  
+        node-version: 12.16.1
 
     # Runs a set of commands using the runners shell
     - name: installing surge
       run: npm install -g surge 
     - name: deploying using surge
-      run: surge ./gruesome-rock.surge.sh --token {{secrets.surge_token}}
-        
+      run: surge ./gruesome-rock.surge.sh --token "460921a79dc89f423f6180bafdc16a11"
