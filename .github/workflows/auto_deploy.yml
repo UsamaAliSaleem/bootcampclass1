@@ -30,4 +30,4 @@ jobs:
     - name: installing surge
       run: npm install -g surge 
     - name: deploying using surge
-      run: surge ./gruesome-rock.surge.sh --token "460921a79dc89f423f6180bafdc16a11"
+      run: surge ./ gruesome-rock.surge.sh --token ${{secrets.SURGE_TOKEN }}
